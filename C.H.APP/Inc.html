@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro Interactivo - Cuerpo Humano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="book">
+        <!-- Página 1 -->
+        <section class="page" id="pagina1">
+            <h1>El Cuerpo Humano</h1>
+            <p>Este es el cuerpo humano. ¡¿Quieres conocer tu cuerpo?!</p>
+            <img src="https://media.istockphoto.com/id/1126081577/es/vector/partes-del-cuerpo-ni%C3%B1a-y-ni%C3%B1o-de-dibujos-animados.jpg?s=612x612&w=0&k=20&c=cmoOrKKLmoD8WJzsO165ejwPWzxE5WyOwDcrBK3eiog=" alt="Ilustración de un ser humano" class="human-image">
+            <button onclick="nextPage('pagina1-2')">SI</button>
+        </section>
+        <!-- Página 1-2 -->
+<section class="page" id="pagina1-2">
+    <h2>Descubramos el Cuerpo</h2>
+    <p>Haz clic en el maletín para abrirlo y descubrir más partes del cuerpo.</p>
+
+    <div class="maletin" id="maletin">
+        <img src="https://img.freepik.com/vector-gratis/bolsa-mensajero-vintage-marron-estilo-dibujos-animados_1308-90693.jpg" alt="Maletín Cerrado" id="maletin-cerrado" class="maletin-img">
+        <img src="https://img.freepik.com/vector-gratis/maleta-cuero-abierta-pegatina-dibujos-animados_1308-64847.jpg" alt="Maletín Abierto" id="maletin-abierto" class="maletin-img hidden" onclick="nextPage('pagina1-3')">
+    </div>
+</section>
+
+
+        <!-- Página 1-3 -->
+        <section class="page" id="pagina1-3">
+            <h2>Descubramos el Cuerpo</h2>
+            <p>El cuerpo tiene diferentes partes, como la cabeza, el tronco y las extremidades.</p>
+            <div class="content-wrapper">
+                <div class="button-group-left">
+                    <button onclick="nextPage('pagina3')">Tronco</button>
+                    <button onclick="nextPage('pagina5')">Extremidades Inferiores</button>
+                </div>
+                
+                <img src="https://cerebriti.b-cdn.net/uploads/f280f1d33664b33bbcfc51b3d8655fbf.jpg" alt="Niño señalando partes del cuerpo" class="imagen-un">
+                
+                <div class="button-group-right">
+                    <button onclick="nextPage('pagina2')">Cabeza</button>
+                    <button onclick="nextPage('pagina4')">Extremidades Superiores</button>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!-- Página 2 -->
+        <section class="page" id="pagina2">
+            <h2>La Cabeza</h2>
+            <p>Aquí está la cabeza, donde están los ojos, oídos, boca y nariz.</p>
+            <img src="https://i.pinimg.com/736x/8e/01/60/8e016047910abefc15b6a9b54f1ac845.jpg" alt="Ilustracion de la cabeza" class="imagen-uni">
+            <p> * Ojos para ver.
+                * Nariz para oler.
+                * Boca para comer y hablar.
+                * Orejas para oír.
+                * Pelo para cubrir la cabeza.</p>
+            <button onclick="nextPage('pagina1-3')">Cuerpo</button>
+        </section>
+
+        <!-- Página 3 -->
+        <section class="page" id="pagina3">
+            <h2>El Tronco</h2>
+            <p>¡El tronco es la parte del cuerpo donde está!</p>
+            <img src="https://static.vecteezy.com/system/resources/previews/017/732/202/non_2x/small-happy-child-cheerful-girl-kid-raising-hands-vector.jpg" alt="Ilustracion del tronco" class="imagen-uniforme">
+            <p> * El corazón que hace pum, pum.
+                * Los pulmones para respirar.
+                * El estómago para digerir la comida.
+               </p>
+            <button onclick="nextPage('pagina1-3')">Cuerpo</button>
+        </section>
+
+        <!-- Página 4 -->
+        <section class="page" id="pagina4">
+            <h2>Extremidad Superior</h2>
+            <p>Extremidades superiores: Son los brazos. Sirven para abrazar, jugar y comer</p>
+            <img src="https://image.slidesharecdn.com/partesdelcuerpo-170406022035/75/Partes-del-cuerpo-6-2048.jpg" alt="Ilustracion de E.superior" class="imagen-u">
+            <button onclick="nextPage('pagina1-3')">Cuerpo</button>
+        </section>
+
+        <!-- Página 5 -->
+        <section class="page" id="pagina5">
+            <h2>Extremidades Inferiores</h2>
+            <p>Extremidades inferiores: Son las piernas. Sirven para caminar, correr y saltar.</p>
+            <img src="https://tomi-digital-resources.storage.googleapis.com/images/classes/resources/options/opt-1487262-605a738dba935.jpeg" alt="Ilustracion de las piernas y pies" class="imagen-unifor">
+            <button onclick="nextPage('pagina1-3')">Cuerpo</button>
+        </section>
+    </div>
+    <audio id="relaxing-sound" autoplay loop>
+        <source src="https://www.youtube.com/watch?v=GClCkRDTnhY&list=PLe8LgI3pZqrUeBUBnRnFYNCS7sjc5CH_b" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>

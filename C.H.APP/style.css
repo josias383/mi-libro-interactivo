@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f8fb;
+    overflow: hidden;
+}
+
+.book {
+    width: 100vw;
+    height: 100vh; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page {
+    display: none;
+    width: 90%;
+    max-width: 600px;
+}
+
+.page.active {
+    display: block;
+}
+
+h1, h2 {
+    font-size: 4rem;
+    color: #333;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.human-image {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.imagen-un{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto
+}
+
+.imagen-uni{
+    width: 300%;
+    max-width: 400px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.imagen-uniforme {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.imagen-u{
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.button-group-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.button-group-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.imagen-un {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.button-below {
+    text-align: center;
+    margin-top: 15px;
+}
+
+#pagina1 h1 {
+    margin-bottom: 50px;
+}
+
+#pagina1-3 h2, p {
+    margin-bottom: 50px;
+}
+
+#pagina2 h2, p, img {
+    margin-bottom: 30px;
+}
+
+#pagina3 h2, p, img {
+    margin-bottom: 30px;
+}
+
+#pagima4 h2, p {
+    margin-bottom: 30px;
+}
+
+#pagina5 h2, p {
+    margin-bottom: 30px;
+}
+
+audio {
+    display: none;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+/* Estilos del maletín */
+.maletin {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.maletin-img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Estilo general para la página */
+#pagina1-2 {
+    text-align: center;
+    padding: 20px;
+}
+
+#pagina1-2 h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#pagina1-2 p {
+    font-size: 18px;
+    color: #666;
+}
+
+
+
+
